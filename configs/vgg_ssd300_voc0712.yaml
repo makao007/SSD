@@ -3,7 +3,7 @@ MODEL:
 INPUT:
   IMAGE_SIZE: 300
 DATASETS:
-  TRAIN: ("voc_2007_trainval", "voc_2012_trainval")
+  TRAIN: ("voc_2007_trainval",)
   TEST: ("voc_2007_test", )
 SOLVER:
   MAX_ITER: 120000
@@ -11,5 +11,7 @@ SOLVER:
   GAMMA: 0.1
   BATCH_SIZE: 32
   LR: 1e-3
+DATA_LOADER:
+  NUM_WORKERS: 0
 
 OUTPUT_DIR: 'outputs/vgg_ssd300_voc0712'
