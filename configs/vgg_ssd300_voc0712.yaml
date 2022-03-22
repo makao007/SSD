@@ -12,6 +12,6 @@ SOLVER:
   BATCH_SIZE: 32
   LR: 1e-3
 DATA_LOADER:
-  NUM_WORKERS: 0
+  NUM_WORKERS: 2
 
 OUTPUT_DIR: 'outputs/vgg_ssd300_voc0712'
